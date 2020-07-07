@@ -1,0 +1,1 @@
+#Roll four 6-sided dice and compute the total of the three highest dice. 
