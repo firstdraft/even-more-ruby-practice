@@ -152,3 +152,92 @@ describe "3_hamming.rb" do
     expect(dna.distance_between(other_dna)).to eq(0)
   end
 end
+
+describe "4_raindrops.rb" do
+  it "should print '52' when the input is '52'", points: 1 do
+    # Un-require raindrops.rb
+    raindrops = $".select{|r| r.include? '4_raindrops.rb'}
+    $".delete(raindrops.first)
+    
+    allow_any_instance_of(Object).to receive(:gets).and_return("52\n")
+    
+    expect{ require_relative "../../4_raindrops.rb" }.to output(/52/).to_stdout
+  end
+end
+
+describe "4_raindrops.rb" do
+  it "should print 'PlingPlangPlong' when the input is '105'", points: 1 do
+    # Un-require raindrops.rb
+    raindrops = $".select{|r| r.include? '4_raindrops.rb'}
+    $".delete(raindrops.first)
+    allow_any_instance_of(Object).to receive(:gets).and_return("105\n")
+    
+    expect{ require_relative "../../4_raindrops.rb" }.to output(/PlingPlangPlong/).to_stdout
+  end
+end
+
+describe "4_raindrops.rb" do
+  it "should print 'Plang' when the input is '3125'", points: 1 do
+    # Un-require raindrops.rb
+    raindrops = $".select{|r| r.include? '4_raindrops.rb'}
+    $".delete(raindrops.first)
+    allow_any_instance_of(Object).to receive(:gets).and_return("3125\n")
+    
+    expect{ require_relative "../../4_raindrops.rb" }.to output(/Plang/).to_stdout
+  end
+end
+
+describe "4_raindrops.rb" do
+  it "should print 'Plong' when the input is '49'", points: 1 do
+    # Un-require raindrops.rb
+    raindrops = $".select{|r| r.include? '4_raindrops.rb'}
+    $".delete(raindrops.first)
+    allow_any_instance_of(Object).to receive(:gets).and_return("49\n")
+    
+    expect{ require_relative "../../4_raindrops.rb" }.to output(/Plong/).to_stdout
+  end
+end
+
+describe "4_raindrops.rb" do
+  it "should print 'PlangPlong' when the input is '35'", points: 1 do
+    # Un-require raindrops.rb
+    raindrops = $".select{|r| r.include? '4_raindrops.rb'}
+    $".delete(raindrops.first)
+    allow_any_instance_of(Object).to receive(:gets).and_return("35\n")
+    
+    expect{ require_relative "../../4_raindrops.rb" }.to output(/PlangPlong/).to_stdout
+  end
+end
+
+describe "4_raindrops.rb" do
+  it "should print 'Plang' when the input is '25'", points: 1 do
+    # Un-require raindrops.rb
+    raindrops = $".select{|r| r.include? '4_raindrops.rb'}
+    $".delete(raindrops.first)
+    allow_any_instance_of(Object).to receive(:gets).and_return("25\n")
+    
+    expect{ require_relative "../../4_raindrops.rb" }.to output(/Plang/).to_stdout
+  end
+end
+
+describe "4_raindrops.rb" do
+  it "should print 'Plang' when the input is '21'", points: 1 do
+    # Un-require raindrops.rb
+    raindrops = $".select{|r| r.include? '4_raindrops.rb'}
+    $".delete(raindrops.first)
+    allow_any_instance_of(Object).to receive(:gets).and_return("21\n")
+    
+    expect{ require_relative "../../4_raindrops.rb" }.to output(/PlingPlong/).to_stdout
+  end
+end
+
+describe "4_raindrops.rb" do
+  it "should print 'Plang' when the input is '21'", points: 1 do
+    # Un-require raindrops.rb
+    raindrops = $".select{|r| r.include? '4_raindrops.rb'}
+    $".delete(raindrops.first)
+    allow_any_instance_of(Object).to receive(:gets).and_return("21\n")
+    
+    expect{ require_relative "../../4_raindrops.rb" }.to output(/PlingPlong/).to_stdout
+  end
+end
