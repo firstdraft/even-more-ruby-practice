@@ -99,3 +99,64 @@ Your program should print: `x points`
 
 Hint: the formula to find a circle with the center point (j, k) and radius (r):
    (x-j)^2 + (y-k)^2 = r^2
+
+
+### think_fast.rb
+
+We have to expect the unexpected — if users can find a way to break our code by navigating through it in a sequence that we didn't predict, they 100% will.
+
+Suppose that your program has to deal with the object inside the variable some_random_input, starting on Line 18. If the object is:
+
+a String: downcase it and print
+a Time: figure out the day of the week, downcased, and print
+an Integer: figure out whether it's odd or even and print
+a Symbol: downcase it and print
+nil: print "no object provided"
+true: print "you may pass"
+false: print "you may not pass"
+a Hash: print the list of keys within the Hash, as an Array.
+
+
+How would you start to go about it?
+
+---
+
+Remember that, as developers, we're inventors — exploring the unknown and solving new problems that come our way. The aren't formulas to look up and follow for every situation; just tools in our belts. One of our most important tools for dealing with the unknown is conditionals.
+
+https://chapters.firstdraft.com/chapters/763
+
+---
+
+Next, remember that there's a method called .class that we can call on any Ruby object to find out what kind of thing it is. We first met it way back in the Integer Chapter, and we used it a lot especially when exploring an API response, which could come back to us in different shapes and sizes.
+
+---
+
+There are no automated tests for this REPL, it's mostly a thought exercise. But try to flesh out your answer and think of questions to for us to discuss.
+
+### accumulate.rb
+
+Add some code to this program to, at the end, print the history of answers given while being pestered whether we're there yet.
+
+For example,
+```bash
+"Are we there yet?"
+ No
+"Are we there yet?"
+ No
+"Are we there yet?"
+ ... no
+"Are we there yet?"
+ NO
+"Are we there yet?"
+ @#*(&$*(@&%#
+"Are we there yet?"
+ yes
+["no", "... no", "no", "@#*(&$*(@&%#", "yes"]
+```
+
+Key output
+
+Note that at the end of the dialogue, it printed an Array with:
+```bash
+["no", "... no", "no", "@#*(&$*(@&%#", "yes"]
+```

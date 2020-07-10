@@ -27,8 +27,19 @@
 class Dna
   attr_accessor :strand
 
-  def distance_between(other_strand)
+  def distance_between(other_dna)
+    nucleotides_1 = self.strand.split("")
+    nucleotides_2 = other_dna.strand.split("")
     
+    distance = 0
+    
+    nucleotides_1.length.times do |index|
+      if nucleotides_1.at(index) != nucleotides_2.at(index)
+        distance = distance + 1
+      end
+    end
+    
+    return distance
   end
 end
 
@@ -37,4 +48,4 @@ dna.strand = "G"
 other_dna = Dna.new
 other_dna.strand = "T"
 
-dna.distance_between(other_dna)
+p dna.distance_between(other_dna)

@@ -33,8 +33,25 @@
 # But you should most definitely ask us questions about the methods and classes in the Ruby readings, and how they work.
 
 class Phrase
-  attr_accesor :body
+  attr_accessor :body
+
   def abbreviate
+    phrase_without_hyphens = self.body.gsub("-", " ")
+    words_array = phrase_without_hyphens.split
     
+    acronym = ""
+    
+    words_array.each do |word|
+      character_array = word.split("")
+      first_character = character_array.at(0)
+      capitalized_character = first_character.capitalize
+      acronym = acronym + capitalized_character
+    end
+    
+    return acronym
   end
 end
+
+nm = Phrase.new
+nm.body = "Complementary metal-oxide semiconductor"
+p nm.abbreviate

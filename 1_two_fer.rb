@@ -19,3 +19,9 @@
 
 # SomeFer.name_and_num("Alice", "four") # => "Four for Alice, four for me."
 # SomeFer.name_and_num("Bob", "two") # => "Two for Bob, two for me."
+
+p "Enter a name"
+
+name = gets.chomp
+
+p "One for #{name.capitalize}, two for me."
