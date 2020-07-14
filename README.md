@@ -145,7 +145,7 @@ How would you start to go about it?
 
 ---
 
-Remember that, as developers, we're inventors — exploring the unknown and solving new problems that come our way. The aren't formulas to look up and follow for every situation; just tools in our belts. One of our most important tools for dealing with the unknown is conditionals.
+Remember that, as developers, we're inventors — exploring the unknown and solving new problems that come our way. The aren't formulas to look up and follow for every situation; just tools in our belts. One of our most important tools for dealing with the unknown are `if` statements.
 
 https://chapters.firstdraft.com/chapters/763
 
@@ -153,9 +153,6 @@ https://chapters.firstdraft.com/chapters/763
 
 Next, remember that there's a method called .class that we can call on any Ruby object to find out what kind of thing it is. We first met it way back in the Integer Chapter, and we used it a lot especially when exploring an API response, which could come back to us in different shapes and sizes.
 
----
-
-There are no automated tests for this REPL, it's mostly a thought exercise. But try to flesh out your answer and think of questions to for us to discuss.
 
 ### accumulate.rb
 
