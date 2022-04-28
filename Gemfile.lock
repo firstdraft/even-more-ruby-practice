@@ -39,7 +39,7 @@ GEM
     diff-lcs (1.4.3)
     diffy (3.3.0)
     erubi (1.9.0)
-    git (1.7.0)
+    git (1.11.0)
       rchardet (~> 1.8)
     i18n (1.8.3)
       concurrent-ruby (~> 1.0)
